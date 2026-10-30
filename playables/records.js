@@ -1,0 +1,1 @@
+export function upgradePrefs(raw={}){const p={...raw};if(p.bestOriginal===undefined)p.bestOriginal=p.best||0;if(p.bestExpedition===undefined)p.bestExpedition=0;if(p.expedition===undefined)p.expedition=!p.checkpoint;if(p.clarityVersion!==1){p.focus=true;p.clarityVersion=1;}return p;}
